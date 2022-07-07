@@ -1,23 +1,43 @@
-import React from "react"
+import React from "react";
 
+import { Container, LogoContainer, Menu, MenuItem, MenuItemLink, Wrapper } from "./NavBarElements";
 
+const NavBar = () => {
+    return (
+        <Container>
+            <Wrapper>
+                <LogoContainer>
+                   <p>Eagle Drops</p>
+                   
+                </LogoContainer>
+                <Menu>
+                    <MenuItem>
+                        <MenuItemLink>
+                           Inicio
+                        </MenuItemLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItemLink>
+                           Nosotros
+                        </MenuItemLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItemLink>
+                           Tienda
+                        </MenuItemLink>
+                    </MenuItem>
+                    <MenuItem>
+                        <MenuItemLink>
+                           Contacto
+                        </MenuItemLink>
+                    </MenuItem>
+                </Menu>
+            </Wrapper>
+        </Container>
+    );
+};
 
-function NavBar() {
-  return (
-    <>
-    <nav className="nav">
-      <ul>
-        <li>Inicio</li>
-        <li>Catalogo</li>
-        <li>Nuestros locales</li>
-        <li>Mi cuenta</li>
-      </ul>
-    </nav>
-    </>
-  )
-}
-
-export default NavBar
+export default NavBar;
 
 
 
