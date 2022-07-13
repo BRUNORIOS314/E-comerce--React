@@ -1,6 +1,6 @@
 import React from "react";
-
 import { Container, LogoContainer, Menu, MenuItem, MenuItemLink, Wrapper } from "./NavBarElements";
+import { CardWidget, CardIcon } from "./CardWidget";
 
 const NavBar = () => {
     return (
@@ -32,7 +32,10 @@ const NavBar = () => {
                         </MenuItemLink>
                     </MenuItem>
                 </Menu>
+            <CardIcon></CardIcon>
             </Wrapper>
+            <CardWidget>
+            </CardWidget>
         </Container>
     );
 };
